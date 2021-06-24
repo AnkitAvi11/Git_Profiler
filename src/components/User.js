@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Card, Avatar} from 'antd';
 import { Redirect } from 'react-router-dom';
 import TopLanguages from './TopLanguages';
+import Stats from './Stats';
 
 class User extends Component {
     
@@ -102,6 +103,7 @@ class User extends Component {
                     </div>
                 </div>
                 <div className="row" style={{marginTop : "30px"}}>
+                    <Stats username={user.login} />
                     <TopLanguages username={user.login} />
                 </div>
             </div>
