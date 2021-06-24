@@ -41,7 +41,7 @@ class Navigation extends Component {
                         </li>
                         
                     </ul>
-                    <form className="d-flex" onSubmit={this.formSubmit}>
+                    <form className="d-flex" action="/user">
                         <input className="form-control me-sm-2" type="text" placeholder="GitHub Username" onChange={this.handleChange} name='username' autoFocus={true} />
                         <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                     </form>

@@ -15,8 +15,8 @@ class User extends Component {
     }
 
     getUser = () => {
-        const {username} = this.props.match.params
-        fetch(`https://api.github.com/users/${username}`)
+        
+        fetch(`https://api.github.com/users/${this.props.location.search.split("=")[1]}`)
         .then(res => {
             if(res.status === 404) {
                 return this.setState({user_found : false, loading : false})
