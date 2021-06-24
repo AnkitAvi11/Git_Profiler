@@ -43,12 +43,12 @@ class TopLanguages extends Component {
         let repos = this.state.repositories.map(repo => {
             return <Col span={8} style={{marginTop: "10px"}} key={repo.id}>
                 <Card>
-                <h5><a href={repo.html_url} target="_blank">{repo.name}</a></h5>
+                <h5><a href={repo.html_url} target="_blank" rel="noreferrer">{repo.name}</a></h5>
                 <p>{repo.description}</p>
                 <div className="d-flex justify-content-between align-items-center">
-                    <p><i class="bi bi-star"></i> {repo.stargazers_count}</p>
-                    <p><i class="bi bi-share"></i> {repo.forks}</p>
-                    <p><i class="bi bi-bounding-box"></i> {repo.size} KB</p>
+                    <p><i className="bi bi-star"></i> {repo.stargazers_count}</p>
+                    <p><i className="bi bi-share"></i> {repo.forks}</p>
+                    <p><i className="bi bi-bounding-box"></i> {repo.size} KB</p>
                 </div>
                 </Card>
             </Col>

@@ -65,7 +65,7 @@ class About extends Component {
                             <br/>
                             <br/>
                             <h1>{user.name}</h1>
-                            <p><a href={user.html_url} target="_blank">@{user.login}</a></p>
+                            <p><a href={user.html_url} target="_blank" rel="noreferrer">@{user.login}</a></p>
                             <p>{user.bio}</p>
                             <p><i className="bi bi-briefcase"></i> {user.company ? user.company : 'NA'} &nbsp; <i className="bi bi-geo-alt"></i> {user.location ? user.location : 'NA'} &nbsp; <i className="bi bi-calendar"></i> {new Date(user.created_at).toLocaleDateString()} </p>
                         </Card>
